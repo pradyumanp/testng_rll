@@ -1,0 +1,40 @@
+package steps;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class Boxcucumber {
+	WebDriver driver;
+	@Given("I open the browse")
+	public void i_open_the_browse() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.bookswagon.com/");
+	    
+	    
+	}
+
+	@Given("I click on Boxsets")
+	public void i_click_on_boxsets() {
+		 driver.findElement(By.linkText("Box Sets")).click();
+		
+
+	}
+
+
+	@When("I click on Payment")
+	public void i_click_on_payment() {
+		driver.findElement(By.linkText("Payment")).click();
+	}
+	  
+
+	@When("I click on Shipping")
+	public void i_click_on_shipping() {
+		 driver.findElement(By.linkText("Shipping")).click();
+	}
+	   
+
+}
