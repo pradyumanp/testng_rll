@@ -1,0 +1,10 @@
+@tag
+Feature: Title of your website
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: bookswagon website
+    Given I open the browse
+    And I click on Boxsets
+    When I click on Payment
+    And I click on Shipping
