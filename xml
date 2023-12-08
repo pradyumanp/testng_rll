@@ -1,0 +1,7 @@
+<suite name="test1" verbose="1">
+<test name="TestCycle1">
+<classes>
+<class name="com.app.testngscript.Box"></class>
+</classes>
+</test>
+</suite>
